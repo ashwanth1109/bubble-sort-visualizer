@@ -4,10 +4,14 @@
   "description": "",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html"
+    "build": "parcel build index.html --public-url /bubble-sort-visualizer/",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d dist"
   },
+  "homepage": "http://ashwanth1109.github.io/bubble-sort-visualizer",
   "license": "MIT",
   "dependencies": {
+    "gh-pages": "^2.1.1",
     "react": "^16.9.0",
     "react-dom": "^16.9.0"
   },
